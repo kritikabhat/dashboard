@@ -17,16 +17,18 @@
     display: grid;
     background-color: #24aae2;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-left: 10%;
     padding-top: 10%;
 }
 .header {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     padding: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 .yourProjects {
     grid-column: 2/3;
@@ -73,4 +75,8 @@ li {
 }
 li img {
     margin-right: 8%;
+}
+.projectCards div:hover {
+    opacity: 0.9;
+    background-color: rgb(152, 243, 244);
 }
