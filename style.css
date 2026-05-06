@@ -2,58 +2,74 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 0 0 0;
     font-family: "Roboto", sans-serif;
-    padding: 0;
     line-height: 1.5;
 }
 .container {
-    display: grid;
-    grid-template-columns: 15% 85%;
-}
-.sidebar {
-    grid-column: 1/2;
-    grid-row: 1/5;
-    display: grid;
-    background-color: #24aae2;
-    color: white;
-    font-size: 1.5rem;
-    padding-left: 10%;
-    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 .header {
-    grid-column: 2/3;
-    padding: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 4rem 13rem;
 }
+.imgDiv {
+    background-image: url(images/christin-hume-hBuwVLcYTnA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40rem;
+    min-height: 34rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem grey;
+}
+.welcome {
+    box-shadow: 0.2rem 0.2rem 0.4rem grey;
+    padding: 2rem;
+}
+.welcome div {
+    margin-bottom: 1rem;
+}
+/* This 70/30 only works for tablet/laptop screens, use @media for smaller */
 .yourProjects {
-    grid-column: 2/3;
-    grid-row: 2/5;
+    /* grid-column: 2/3;
+    grid-row: 2/5; */
     display: grid;
     grid-template-columns: 75% 25%;
     background-color: #D8E2EC;
-    font-size: 1.2rem;
-    padding: 1.5rem;
+    padding: 2rem;
+    font-size: 2rem;
+    flex: 1; /* This property is what makes the project div fill remaining height space, do not delete */
 }
-.projectCards {
+/* I need to change the grid-template-columns & min_height using @media
+Ok, i think auto-fit fixed it for all sizes so don't need media for it
+*/
+.projectArea {
     grid-column: 1/2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     margin-top: 1rem;
-    gap: 1.5rem;
-    margin-right: 1rem;
+    gap: 2rem;
+    margin-right: 2rem;
 }
-.projectCards div {
+.projectArea > div {
     background-color: white;
-    padding: 1.5rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem grey;
-    border-left: 0.6rem solid orange;
-    border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    border-bottom-right-radius: 0.5rem;
+    min-height: 25rem;
+}
+.projectSummary {
+    padding: 1.2rem;
+    text-align: justify;
+    font-size: 1.5rem !important;
+}
+img {
+    height: 60%;
+    width: 100%;
+    object-fit: fill;
 }
 .rightSidebar {
     grid-column: 2/3;
@@ -66,6 +82,7 @@
     gap: 1.5rem;
     margin-top: 1rem;
     margin-left: 0.5rem;
+    font-size: 1.5rem !important;
 }
 ul {
     list-style-type: none;
@@ -76,7 +93,6 @@ li {
 li img {
     margin-right: 8%;
 }
-.projectCards div:hover {
-    opacity: 0.9;
-    background-color: rgb(152, 243, 244);
+a {
+    text-decoration: none;
 }

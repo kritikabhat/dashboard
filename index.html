@@ -3,97 +3,80 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Kritika">
-        <meta name="description" content="Dashboard">
+        <meta name="description" content="Portfolio">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="stylesheet" href="style.css">
         <title>Demo</title>
     </head>
     <body>
 
         <div class="container">
-            <section class="sidebar">
-                <div class="logoArea">
-                    <ul>
-                        <li>
-                    <img src="googleFonts/dashboard.svg" alt="dashboard icon">
-                    <p>Dashboard</p>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="navLinks">
-                    <ul>
-                        <li>
-                            <img src="googleFonts/home.svg" alt="dashboard icon">
-                            <p>Home</p>
-                        </li>
-                        <li>
-                            <img src="googleFonts/article_person.svg" alt="dashboard icon">
-                            <p>Profile</p>
-                        </li>
-                        <li>
-                            <img src="googleFonts/checklist_rtl.svg" alt="dashboard icon">
-                            <p>Messages</p>
-                        </li>
-                        <li>
-                            <img src="googleFonts/history_2.svg" alt="dashboard icon">
-                            <p>History</p>
-                        </li>
-                        <li>
-                            <img src="googleFonts/checklist_rtl.svg" alt="dashboard icon">
-                            <p>Tasks</p>
-                        </li>
-                        <li>
-                            <img src="googleFonts/groups.svg" alt="dashboard icon">
-                            <p>Communities</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="accountSettingsLinks">
-                    <ul>
-                        <li><img src="googleFonts/settings_account_box.svg" alt="dashboard icon">Settings</li>
-                        <li><img src="googleFonts/info.svg" alt="dashboard icon">Support</li>
-                        <li><img src="googleFonts/identity_platform.svg" alt="dashboard icon">Privacy</li>
-                    </ul>
-                </div>
-            </section>
             <section class="header">
-                <div>
-                    <img src="googleFonts/resume.png" alt="picture of a resume">
-                </div>
+                <div class="imgDiv"></div>
                 <div class="welcome">
                     <div>
+                        <h1 style="font-weight: 400;">About Me</h1>
+                    </div>
+                    <div> 
                         <p>Hi there! ✌️</p>
                         <p>I am Kritika Bhat! I am a full-stack software developer. This project was made to revise code concepts.
-                        <br>Check out some of my projects below!</p>
+                        <br>Check out some of my other projects below!
+                        <br>Proin efficitur, eros in facilisis egestas, felis erat 
+                                pretium diam, in fringilla nulla
+                        </p>
                     </div>
-                </div>
-                <div>
-                    <a href="">Github</a>
-                    <a href="">Linkedin</a>
+                    <div class="headingLogos">
+                        <span style="font-weight: 500;">Contact:</span>
+                        <a href="https://github.com/kritikabhat" target="_blank">
+                            <i class="devicon-github-original"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="devicon-linkedin-plain"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
             <div class="yourProjects">
                 <section>
                     <b>Projects</b>
-                    <div class="projectCards">
+                    <div class="projectArea">
                         
                         <div>
-                            <h3>Rock, Paper, Scissors!</h3>
-                            <p>Visual gameplay of the popular game Rock, Paper & Scissors. You play 5 rounds with the computer. The game ends in a winner (confetti) or a draw.
-                                <a href="https://kritikabhat.github.io/rps/">Github live link</a></p>
+                            <img src="images/Project_rps.png" />
+                            <div class="projectSummary">
+                                <h3>Rock, Paper, Scissors!</h3>
+                                <p>Visual gameplay of the popular game Rock, Paper & Scissors. You play 5 rounds with the computer. The game ends in a winner (confetti) or a draw.
+                                    <a href="https://github.com/kritikabhat/rps" target="_blank">
+                                        <i class="devicon-github-original"></i></a>
+                                    <a href="https://kritikabhat.github.io/rps/" target="_blank">
+                                        <span class="material-symbols-outlined">open_in_new</span></a>
+                                </p>
+                            </div>
                         </div>
                         <div>
-                            <h3>Etch-A-Sketch 2.0</h3>
-                            <p>You can sketch on a basic whitepad in the browser. You can change the brush size, brush color. I deliberately disabled the site for smaller screens.
-                                <a href="https://kritikabhat.github.io/etch-a-sketch/">Github live link</a>
-                            </p>
+                            <img src="images/Project_etch-a-sketch.png" />
+                            <div class="projectSummary">
+                                <h3>Etch-A-Sketch</h3>
+                                <p>You can sketch on a basic whitepad in the browser. You can change the brush size, brush color. I deliberately disabled the site for smaller screens.
+                                    <a href="https://github.com/kritikabhat/etch-a-sketch">
+                                        <i class="devicon-github-original"></i></a>
+                                    <a href="https://kritikabhat.github.io/etch-a-sketch/" target="_blank">
+                                        <span class="material-symbols-outlined">open_in_new</span></a>
+                                </p>
+                            </div> 
                         </div>
                         <div>
-                            <h3>Calculator</h3>
-                            <p>You can do basic arithematic (addition, subtraction, multiplication and division) for integers, decimals and negative numbers. You can also do continous calculations just like on a real calculator.
-                                <a href="https://kritikabhat.github.io/calculator/">Github live link</a>
-
-                            </p>
+                            <img src="images/Project_calculator.png" />
+                            <div class="projectSummary">
+                                <h3>Calculator</h3>
+                                <p>You can do basic arithematic (addition, subtraction, multiplication and division) for integers, decimals and negative numbers. You can also do continous calculations just like on a real calculator.
+                                    <a href="https://github.com/kritikabhat/calculator">
+                                        <i class="devicon-github-original"></i></a>
+                                    <a href="https://kritikabhat.github.io/calculator/" target="_blank">
+                                        <span class="material-symbols-outlined">open_in_new</span></a>
+                                </p>
+                            </div> 
                         </div>
                         <div>
                             <h3>Super Cool Project 4</h3>
@@ -116,12 +99,13 @@
                         
                     </div>
                 </section>
-                <section class="rightSidebar">
+                <aside class="rightSidebar">
                     <b>Announcements</b>
                     <div class="announcements">
                         <div>
-                            <h3>Site Maintainance</h3>
-                            <p>Phasellus sagittis lobortis commodo. Integer iaculis porttitor luctus.</p>
+                            <h3>Tech Stack</h3>
+                            <p>HTML, CSS, JavaScript, React, NodeJS, Java<br>
+                                Docker, TypeScript, </p>
                         </div>
                         <hr>
                         <div>
@@ -131,14 +115,30 @@
                         <hr>
                         <div>
                             <h3>Icons and Fonts</h3>
-                            <p><a href="https://www.flaticon.com/free-icons/resume-and-cv" title="resume and cv icons">Resume and cv icons created by Nes_Kanyanee - Flaticon</a></p>
-                            <p><a href="https://fonts.google.com/icons?icon.query=resume">Roboto font and Sidebar icons by Google Fonts</a></p>
+                            <p>Header Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christin Hume</a> on <a href="https://unsplash.com/photos/person-using-macbook-hBuwVLcYTnA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                            <p><a href="https://devicon.dev/" target="_blank">Github and LinkedIn icons by Devicon</a></p>
+                            <p><a href="https://www.flaticon.com/free-icons/resume-and-cv" target="_blank">Resume icon by Nes_Kanyanee - Flaticon</a></p>
+                            <p><a href="https://fonts.google.com/icons?icon.query=resume" target="_blank">Roboto font by Google Fonts</a></p>
+                            <p>
                         </div>
                         
                     </div>
-                </section>
-            </div>
-            
+                </aside>
+            </div>  
+            <footer>
+                <h1>Contact me</h1>
+                <p>Please get in touch!</p>
+                <div>
+                    <span class="material-symbols-outlined">home</span>Toronto, Canada
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">mail</span>kritika.rkbhat@gmail.com
+                    <span class="material-symbols-outlined">mail</span>kbhat3@asu.edu
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">call</span>+1 123 4567 890
+                </div>
+            </footer>      
         </div>
         
     <script src="script.js"></script> 

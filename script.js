@@ -1,6 +1,8 @@
 /**
  * Future tasks: 
  * 
+ * Remove the Resume pic and put your own big pic later on
+ * 
  * For each project card:
  * If you click it, direct to git repo, using focus?
  * Provide live link in the project card.
@@ -16,6 +18,5 @@
  * 
  * add focus opacity thing when you focus on each project
  * 
- * make the left sidebar collapsable
  * see what it looks like on mobile
  */
