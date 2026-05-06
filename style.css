@@ -35,8 +35,6 @@
 }
 /* This 70/30 only works for tablet/laptop screens, use @media for smaller */
 .yourProjects {
-    /* grid-column: 2/3;
-    grid-row: 2/5; */
     display: grid;
     grid-template-columns: 75% 25%;
     background-color: #D8E2EC;
@@ -95,4 +93,24 @@ li img {
 }
 a {
     text-decoration: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items:end;
+    font-size: 1.5rem;
+}
+footer > div {
+    text-align: center;
+    width: 35rem;
+    margin: 3rem 13rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+}
+.contactDetails {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
